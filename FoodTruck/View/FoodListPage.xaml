@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage  
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:FoodTruck.ViewModel;assembly"
+    x:Class="FoodTruck.View.FoodListPage"
+    Title="Top Picks" BackgroundColor="#ECE7FE"
+    x:Name="MyNotifyPage">
+    
+     
+        <ContentPage.ToolbarItems>
+        
+        <ToolbarItem Icon="cart.png" Command="{Binding Source={x:Reference MyNotifyPage}, Path=BindingContext.CartCommnad}" />
+    </ContentPage.ToolbarItems>
+          
+            <StackLayout Margin="5,5">
+              
+                   
+                <SearchBar Placeholder="Search...." />
+                        
+                  
+                
+                <ListView x:Name="foodListView" HasUnevenRows="true" ItemsSource="{Binding ProductList}" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                            <StackLayout Orientation="Horizontal"  Padding="5">
+                                <Image Source="{Binding Image}"/>
+                                <StackLayout HorizontalOptions="StartAndExpand">
+                                    <Label Text="{Binding Name}"/>
+                                    <Label Text="{Binding Description}" TextColor="Silver" FontSize="Micro"/>
+                                    <Label Text="{Binding Price}" TextColor="Red" FontSize="Small"/>
+                                </StackLayout>
+                              <Button Text="Add" Command="{Binding Source={x:Reference foodListView}, Path=BindingContext.AddFoodCommand}" CommandParameter="{Binding .}" />
+                                    </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                  
+            
+                </StackLayout>
+        </ContentPage>
+  

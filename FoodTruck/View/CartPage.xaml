@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespac:FoodTruck.Templates;assembly"
+    x:Class="FoodTruck.View.CartPage"
+    Title="Cart Page">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="" Text="Home" Command="{Binding HomeCommand}"/>
+    </ContentPage.ToolbarItems>
+   <StackLayout>
+        <ListView  x:Name="listview" ItemsSource="{Binding CartList}" HasUnevenRows="true">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                   <ViewCell>
+                               <StackLayout Orientation="Horizontal"  Padding="5">
+                                <Image Source="{Binding Key.Image}"/>
+                                <StackLayout HorizontalOptions="StartAndExpand">
+                                    <Label Text="{Binding Key.Name}"/>
+                                    <Label Text="{Binding Key.Description}" TextColor="Silver" FontSize="Micro"/>
+                                </StackLayout>
+                                  <StackLayout HorizontalOptions="EndAndExpand">
+                                       <Label Text="{Binding Value}" TextColor="Red"/>
+                               
+                             </StackLayout>
+                            </StackLayout>
+                            </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="CheckOut" Command="{Binding CheckOutCommand}"/>
+    </StackLayout>
+</ContentPage>

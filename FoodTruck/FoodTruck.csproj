@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
+    <PackageReference Include="Xam.Plugin.Badge" Version="1.0.0" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
+    <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="View\" />
+    <Folder Include="ViewModel\" />
+    <Folder Include="Model\" />
+    <Folder Include="Images\" />
+    <Folder Include="Service\" />
+    <Folder Include="Templates\" />
+    <Folder Include="Persistence\" />
+    <Folder Include="Data\" />
+    <Folder Include="ViewModel\Admin\" />
+    <Folder Include="View\Admin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Templates\CardViewTemplate.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FoodTruck.View.LoginPage">
+   <ContentPage.Padding>
+        
+        <OnPlatform x:TypeArguments="Thickness">
+            <OnPlatform.iOS>
+                0,25,0,0
+            </OnPlatform.iOS>
+        </OnPlatform>
+          </ContentPage.Padding>
+        <Grid>
+            <Grid.RowDefinitions>
+                  <RowDefinition Height="80"/>
+                  <RowDefinition Height="*"/>
+                   <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="10">
+                <Label Text="Login"/>
+              </StackLayout>
+        <Grid Grid.Row="1" Margin="20,0,20,0">
+            <Grid.RowDefinitions>
+                   <RowDefinition Height="*"/>
+                   <RowDefinition Height="50"/>
+                   <RowDefinition Height="50"/>
+                   <RowDefinition Height="Auto"/>
+                   <RowDefinition Height="40"/>
+                   <RowDefinition Height="40"/>
+                   <RowDefinition Height="Auto"/>
+                  <RowDefinition Height="*"/>
+                  
+            </Grid.RowDefinitions>
+            <Image Source="login.png" MinimumHeightRequest="70" VerticalOptions="EndAndExpand"/>
+            <Entry Grid.Row="1" Placeholder="Email or Mobile Number" FontSize="12" Text="{Binding Email}"/>
+            <Entry Grid.Row="2" Placeholder="Password" FontSize="12"  IsPassword="true" Text="{Binding Password}"/>
+            <Button Text="Login" BackgroundColor="#E482A7" TextColor="White" HeightRequest="50" VerticalOptions="Start" Grid.Row="3" Command="{Binding LoginCommand}"/>
+            <Label Text="Login Trouble ? Get Help in Sign In" HorizontalOptions="Center" Grid.Row="4" TextColor="#A682E4" VerticalOptions="Center"/>
+            <Grid Grid.Row="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="Auto"/>
+                     <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label BackgroundColor="Teal" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <Label  Text="OR" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+                <Label BackgroundColor="Teal" HeightRequest="2" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            </Grid>
+            <StackLayout Orientation="Horizontal" Grid.Row="6" HorizontalOptions="Center" >
+                <Image Source="facebook.png" HeightRequest="50"/>
+                <Label Text="Login with Facebook"/>
+                
+            </StackLayout>
+              <Grid Grid.Row="7">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="Auto"/>
+                     <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label BackgroundColor="Teal" HeightRequest="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+                <Button  Text="Sign Up" Command="{Binding SignUpCommand}" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Margin="10,0,10,0"/>
+                <Label BackgroundColor="Teal" HeightRequest="2" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            </Grid>
+            
+        </Grid>
+        
+            </Grid>
+  
+</ContentPage>

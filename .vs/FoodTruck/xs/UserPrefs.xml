@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{24246E28-0991-4921-9CE1-9FFA4386BEF2}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FoodTruck/ViewModel/Admin/ProductViewModel.cs">
+    <Files>
+      <File FileName="FoodTruck/View/Admin/ProductPage.xaml" Line="32" Column="68" />
+      <File FileName="FoodTruck/ViewModel/Admin/ProductViewModel.cs" Line="31" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FoodTruck.Android PreferredExecutionTarget="Android.Nexus_6_API_28" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/audiology/Projects/Plural/FoodTruck/FoodTruck/ViewModel/AdminViewModel.cs" relfile="FoodTruck/ViewModel/AdminViewModel.cs" line="20" column="1" />
+      <Breakpoint file="/Users/audiology/Projects/Plural/FoodTruck/FoodTruck/ViewModel/AdminViewModel.cs" relfile="FoodTruck/ViewModel/AdminViewModel.cs" line="21" column="37" />
+      <Breakpoint file="/Users/audiology/Projects/Plural/FoodTruck/FoodTruck/ViewModel/AdminViewModel.cs" relfile="FoodTruck/ViewModel/AdminViewModel.cs" line="95" column="1" />
+      <Breakpoint file="/Users/audiology/Projects/Plural/FoodTruck/FoodTruck/ViewModel/AdminViewModel.cs" relfile="FoodTruck/ViewModel/AdminViewModel.cs" line="94" column="1" />
+      <Breakpoint file="/Users/audiology/Projects/Plural/FoodTruck/FoodTruck/ViewModel/Admin/AddProductViewModel.cs" relfile="FoodTruck/ViewModel/Admin/AddProductViewModel.cs" line="53" column="1" />
+      <Breakpoint file="/Users/audiology/Projects/Plural/FoodTruck/FoodTruck/ViewModel/Admin/AddProductViewModel.cs" relfile="FoodTruck/ViewModel/Admin/AddProductViewModel.cs" line="55" column="1" />
+      <Breakpoint file="/Users/audiology/Projects/Plural/FoodTruck/FoodTruck/View/OrderPage.xaml.cs" relfile="FoodTruck/View/OrderPage.xaml.cs" line="31" column="1" />
+      <Breakpoint file="/Users/audiology/Projects/Plural/FoodTruck/FoodTruck/View/OrderPage.xaml.cs" relfile="FoodTruck/View/OrderPage.xaml.cs" line="17" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.FoodTruck.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.94B8EB41-8E93-46D4-802F-68C1D6307BA7" />
+</Properties>

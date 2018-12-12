@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FoodTruck.View.OrderPage">
+   <ListView ItemsSource="{Binding OrderList}" x:Name="orderlistview">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                 <ListView x:Name="prodcts">
+                    <ListView.ItemTemplate>
+                  <DataTemplate>
+                   <ViewCell>
+                        <Label Text="{Binding  Key.Name}"/>           
+                    </ViewCell>
+                     </DataTemplate>
+                     </ListView.ItemTemplate>
+                    </ListView>
+                       <StackLayout>  
+                          <Label Text="{Binding Value.Order_Id}"  />
+                   <Label Text="{Binding order.products.Name}"/> 
+                    <Label Text="{Binding Quantity}"  />
+                        </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    
+</ContentPage>
